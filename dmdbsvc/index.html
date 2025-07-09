@@ -4,27 +4,27 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>My Docs</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/fontawesome.min.css" rel="stylesheet">
-        <link href="css/brands.min.css" rel="stylesheet">
-        <link href="css/solid.min.css" rel="stylesheet">
-        <link href="css/v4-font-face.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>📘 SQL Server Operations: Roles, Privileges &amp; Scripts - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">My Docs</a>
+                <a class="navbar-brand" href="..">My Docs</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,10 +35,10 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="." class="nav-link active" aria-current="page">Fomin Report Builder</a>
+                                <a href=".." class="nav-link">Fomin Report Builder</a>
                             </li>
                             <li class="nav-item">
-                                <a href="dmdbsvc/" class="nav-link">📘 SQL Server Operations: Roles, Privileges &amp; Scripts</a>
+                                <a href="./" class="nav-link active" aria-current="page">📘 SQL Server Operations: Roles, Privileges &amp; Scripts</a>
                             </li>
                         </ul>
 
@@ -49,12 +49,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href=".." class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="dmdbsvc/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -76,25 +76,17 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#fomin-report-builder" class="nav-link">Fomin Report Builder</a>
+            <li class="nav-item" data-bs-level="1"><a href="#sql-server-operations-roles-privileges-scripts" class="nav-link">📘 SQL Server Operations: Roles, Privileges &amp; Scripts</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#why-frb" class="nav-link">✨ Why FRB?</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#what-youll-find-in-this-documentation" class="nav-link">📦 What You’ll Find in This Documentation</a>
+            <li class="nav-item" data-bs-level="2"><a href="#sql-server-roles-and-privileges" class="nav-link">🧑‍💼 SQL Server Roles and Privileges</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#what-makes-frb-different" class="nav-link">🔍 What Makes FRB Different?</a>
+            <li class="nav-item" data-bs-level="2"><a href="#file-system-permissions" class="nav-link">📁 File System Permissions</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#license-availability" class="nav-link">📜 License &amp; Availability</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#ready-to-build" class="nav-link">🛫 Ready to Build?</a>
+            <li class="nav-item" data-bs-level="2"><a href="#t-sql-sample-scripts" class="nav-link">🧪 T-SQL Sample Scripts</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -105,44 +97,55 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="fomin-report-builder">Fomin Report Builder</h1>
-<p><em>Flexible report building for Clarion applications—by developers, for users.</em></p>
-<p>Fomin Report Builder (FRB) is a powerful runtime reporting engine designed for Clarion for Windows. With deep integration into Clarion 2.0 through Clarion 5 (ABC and Legacy), and compatibility well into modern versions, FRB gives your applications a second wind—letting users create and customize their own reports <em>without touching source code</em>.</p>
-<p>Whether you're an independent developer maintaining legacy systems or a corporate team extending Clarion-based solutions, FRB bridges the gap between developer efficiency and end-user autonomy.</p>
+<h1 id="sql-server-operations-roles-privileges-scripts">📘 SQL Server Operations: Roles, Privileges &amp; Scripts</h1>
+<p>A comprehensive guide to perform the following operations in SQL Server: <strong>Create, Attach, Detach, Backup, and Drop</strong> databases. Includes required SQL Server permissions, file system access, and T-SQL examples.</p>
 <hr />
-<h2 id="why-frb">✨ Why FRB?</h2>
-<ul>
-<li><strong>Empower users</strong>: Let non-technical users design, format, and filter their own reports at runtime.</li>
-<li><strong>No royalties</strong>: Distribute the FRB DLL freely with your compiled applications.</li>
-<li><strong>Multi-language support</strong>: Built-in English and Russian UI, with full localization via <code>FRB_NLS.INI</code>.</li>
-<li><strong>ABC and Legacy friendly</strong>: Complete support for both Clarion template chains.</li>
-<li><strong>Modern design ethos</strong>: Familiar Word-like layout controls make users feel right at home.</li>
-</ul>
-<hr />
-<h2 id="what-youll-find-in-this-documentation">📦 What You’ll Find in This Documentation</h2>
-<p>This documentation is a modernized and expanded guide to everything FRB can do, including:</p>
-<ul>
-<li>🛠 <a href="installation.md">Installation and Setup</a>: How to register templates, deploy DLLs, and add FRB to your project.</li>
-<li>🧑‍💻 <a href="developer-guide.md">Developer Guide</a>: Learn how to integrate FRB with your application's data and templates.</li>
-<li>✍️ <a href="usage.md">Using FRB</a>: Empowering end-users to build and manage reports, with helpful tips and screenshots.</li>
-<li>🧩 <a href="components.md">Components</a>: Dive deep into RBC-library, the FRBC template set, ReportManager, and more.</li>
-<li>📚 <a href="glossary.md">Glossary</a>: Definitions and examples of FRB terminology and report elements.</li>
-<li>🙋 <a href="support.md">Support</a>: Community resources, FAQs, and direct contact with the original developer.</li>
-</ul>
-<hr />
-<h2 id="what-makes-frb-different">🔍 What Makes FRB Different?</h2>
-<p>Unlike static report procedures that bloat application binaries and rely on developers to make every change, FRB stores report forms as <code>.rpt</code> files—compact, independent, and user-editable. Reports can be designed, exported, imported, printed, and sorted without recompiling anything.</p>
-<p>Whether you're managing hundreds of reports or granting on-site teams independence, FRB reduces turnaround time and increases application longevity.</p>
-<hr />
-<h2 id="license-availability">📜 License &amp; Availability</h2>
-<p>FRB 1.5a for Clarion 2.0 is <strong>Freeware</strong>. Commercial versions for Clarion 4 and 5 (ABC and Legacy) are available for purchase directly from the <a href="https://fomintools.com">official site</a>.</p>
-<hr />
-<h2 id="ready-to-build">🛫 Ready to Build?</h2>
-<p>Jump to <a href="installation.md">Installation &amp; Setup</a> to get started—or explore what sets FRB apart in the <a href="https://fomintools.com/frb/features.htm">Feature Overview</a>.</p>
+<h2 id="sql-server-roles-and-privileges">🧑‍💼 SQL Server Roles and Privileges</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Operation</strong></th>
+<th><strong>Required Roles / Permissions</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create Database</td>
+<td><code>CREATE DATABASE</code>, <code>CREATE ANY DATABASE</code>, <code>dbcreator</code>, or <code>sysadmin</code></td>
+</tr>
+<tr>
+<td>Attach Database</td>
+<td><code>CREATE DATABASE</code>, <code>ALTER ANY DATABASE</code>, <code>dbcreator</code>, or <code>sysadmin</code></td>
+</tr>
+<tr>
+<td>Detach Database</td>
+<td><code>db_owner</code> on the target DB or <code>sysadmin</code> role</td>
+</tr>
+<tr>
+<td>Backup Database</td>
+<td><code>BACKUP DATABASE</code>, <code>db_backupoperator</code>, <code>db_owner</code>, or <code>sysadmin</code></td>
+</tr>
+<tr>
+<td>Drop Database</td>
+<td><code>CONTROL</code>, <code>ALTER ANY DATABASE</code>, <code>db_owner</code>, <code>dbcreator</code>, or <code>sysadmin</code></td>
+</tr>
+</tbody>
+</table>
 <blockquote>
-<p><em>“A report designer that feels like Word, works like Clarion, and delivers like clockwork.”</em></p>
+<p>⚠️ Server-level permissions like <code>ALTER ANY DATABASE</code> must be granted at the server level.</p>
 </blockquote>
-<hr /></div>
+<hr />
+<h2 id="file-system-permissions">📁 File System Permissions</h2>
+<ul>
+<li>SQL Server <strong>service account</strong> must have <code>Read/Write</code> permissions on <code>.mdf</code>, <code>.ldf</code>, <code>.bak</code> files.</li>
+<li>Full access to folders like <code>C:\Data</code>, <code>C:\Backup</code> is required for attach/backup operations.</li>
+<li>NTFS permissions must be properly configured if files are stored in custom locations.</li>
+</ul>
+<hr />
+<h2 id="t-sql-sample-scripts">🧪 T-SQL Sample Scripts</h2>
+<h3 id="1-create-database">1️⃣ Create Database</h3>
+<p>```sql
+CREATE DATABASE SampleDB;</p></div>
             </div>
         </div>
 
@@ -150,13 +153,13 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -221,8 +224,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.6.1
-Build Date UTC : 2025-07-09 07:20:59.508519+00:00
--->
