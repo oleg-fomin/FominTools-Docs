@@ -1,0 +1,10 @@
+title: Fomin Report Builder
+arrange:
+  - index.md
+  - features.md
+  - installation.md
+  - usage.md
+  - developer-guide.md
+  - components.md
+  - glossary.md
+  - support.md

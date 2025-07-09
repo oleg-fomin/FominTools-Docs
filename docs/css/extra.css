@@ -1,0 +1,10 @@
+.md-header__button.md-logo img {
+  height: 48px;  /* or try 64px or larger */
+}
+.md-typeset h1 .headerlink,
+.md-typeset h2 .headerlink,
+.md-typeset h3 .headerlink {
+  font-size: 0.8em;
+  margin-left: 0.5em;
+  text-decoration: none;
+}

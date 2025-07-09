@@ -1,1 +1,51 @@
-site_name: My Docs
+site_name: FominTools Docs
+theme:
+  name: material
+  logo: images/logo_light.png  # Path relative to your docs directory
+  favicon: images/favicon2.png
+  features:
+    - navigation.tabs
+#    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.tracking
+#    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - content.code.copy
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+extra_css:
+  - css/extra.css
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/oleg-fomin
+  favicon: images/favicon.png
+plugins:
+  - search
+  - awesome-pages
+extra_javascript:
+  - assets/js/mermaid.min.js
+markdown_extensions:
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - toc:
+      permalink: 🔗
+  - pymdownx.highlight
+  - pymdownx.emoji
