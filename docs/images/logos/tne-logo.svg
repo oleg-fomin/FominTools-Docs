@@ -1,0 +1,39 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tneGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00b894;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00a085;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="24" cy="24" r="22" fill="url(#tneGradient)" stroke="#fff" stroke-width="2"/>
+  
+  <!-- Excel spreadsheet grid -->
+  <rect x="12" y="12" width="24" height="20" rx="2" fill="#fff" opacity="0.95"/>
+  
+  <!-- Excel grid lines -->
+  <line x1="12" y1="16" x2="36" y2="16" stroke="#00b894" stroke-width="1" opacity="0.6"/>
+  <line x1="12" y1="20" x2="36" y2="20" stroke="#00b894" stroke-width="1" opacity="0.6"/>
+  <line x1="12" y1="24" x2="36" y2="24" stroke="#00b894" stroke-width="1" opacity="0.6"/>
+  <line x1="12" y1="28" x2="36" y2="28" stroke="#00b894" stroke-width="1" opacity="0.6"/>
+  
+  <line x1="18" y1="12" x2="18" y2="32" stroke="#00b894" stroke-width="1" opacity="0.6"/>
+  <line x1="24" y1="12" x2="24" y2="32" stroke="#00b894" stroke-width="1" opacity="0.6"/>
+  <line x1="30" y1="12" x2="30" y2="32" stroke="#00b894" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Excel header row -->
+  <rect x="12" y="12" width="24" height="4" fill="#00b894" opacity="0.8"/>
+  
+  <!-- Data cells with content -->
+  <rect x="14" y="18" width="3" height="2" fill="#00a085" opacity="0.7"/>
+  <rect x="20" y="18" width="3" height="2" fill="#00a085" opacity="0.7"/>
+  <rect x="26" y="18" width="3" height="2" fill="#00a085" opacity="0.7"/>
+  
+  <!-- Native/direct connection symbol -->
+  <g transform="translate(34, 34)">
+    <circle cx="6" cy="6" r="6" fill="#00a085" stroke="#fff" stroke-width="1"/>
+    <path d="M3 6 L9 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <path d="M6 3 L6 9" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

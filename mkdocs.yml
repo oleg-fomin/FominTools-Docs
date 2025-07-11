@@ -12,6 +12,7 @@ theme:
     - navigation.top
 #    - toc.integrate
     - content.code.copy
+    - navigation.indexes  # This allows hiding navigation on index pages
   palette: 
     # Palette toggle for light mode
     - scheme: default

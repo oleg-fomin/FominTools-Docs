@@ -8,3 +8,202 @@
   margin-left: 0.5em;
   text-decoration: none;
 }
+
+/* Custom styles for Fomin Tools homepage */
+
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.products-grid {
+    display: grid;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.products-grid h3 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #2c3e50;
+}
+
+.products-grid img {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.features-grid > div {
+    padding: 1.5rem;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    background: #f8f9fa;
+}
+
+.heritage-section {
+    background: #f4f4f4;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.contact-section {
+    background: #e3f2fd;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.getting-started {
+    background: #f1f8e9;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.footer-note {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    padding: 2rem 0;
+    border-top: 1px solid #eee;
+}
+
+/* Updated product card styles */
+.product-card {
+    background: var(--md-default-bg-color, #f8f9fa);
+    border: 1px solid var(--md-default-fg-color--light, #e1e8ed);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.25rem;
+    transition: all 0.3s ease;
+    position: relative; /* Enable positioning for buy-now button */
+}
+
+.product-card:hover {
+    background: var(--md-default-bg-color--light, #fff);
+    border-color: #667eea;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+    transform: translateY(-2px);
+}
+
+.product-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--md-default-fg-color, #2c3e50);
+    margin-bottom: 0.5rem;
+    margin-top: 0; /* Remove default top margin */
+}
+
+.product-card h3 a {
+    color: var(--md-default-fg-color, inherit);
+    text-decoration: none;
+}
+
+.product-card h3 a:hover {
+    color: #667eea;
+}
+
+.product-card img {
+    width: 96px;
+    height: 96px;
+    flex-shrink: 0;
+}
+
+.product-card p {
+    margin: 0;
+    color: var(--md-default-fg-color--light, #666);
+    line-height: 1.4;
+    padding-right: 80px; /* Make space for buy-now button */
+}
+
+/* Buy Now button styles - improved for dark theme */
+.buy-now-link {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: linear-gradient(135deg, #e8e8e8 0%, #d3d3d3 100%);
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.buy-now-link:hover {
+    background: linear-gradient(135deg, #d3d3d3 0%, #e8e8e8 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    color: #2c3e50;
+}
+
+/* Dark theme specific adjustments */
+[data-md-color-scheme="slate"] .product-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+[data-md-color-scheme="slate"] .product-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+[data-md-color-scheme="slate"] .features-grid > div {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.12);
+    color: var(--md-default-fg-color);
+}
+
+[data-md-color-scheme="slate"] .heritage-section {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--md-default-fg-color);
+}
+
+[data-md-color-scheme="slate"] .contact-section {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--md-default-fg-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .products-grid h3 {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-section {
+        padding: 1.5rem;
+    }
+}
+
+/* Ensure no margin/padding issues */
+.md-content {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+.md-content__inner {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
