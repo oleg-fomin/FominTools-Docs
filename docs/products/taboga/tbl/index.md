@@ -30,9 +30,11 @@ The Taboga Barcode Library is available for a fixed price of $119.00. This inclu
 - Templates for ABC and Legacy chains
 - Free technical support
 
-## 🤝 Support
+## 📞 Support
 
-The product originally created by [Taboga Software](https://web.archive.org/web/20220928031714/http://tabogasoftware.com/id10.htm). Ongoing development, support and maintenance provided by FominTools.
+For support and additional information:
 
-For technical assistance:
-- Email: support@fomintools.com
+- **Email**: [support@fomintools.com](mailto:support@fomintools.com)
+- **Fomin Tools**: [https://fomintools.com](https://fomintools.com)
+- **Original Author**: Edgard L. Riba ([Taboga Software](https://web.archive.org/web/20220831045950/http://tabogasoftware.com/id10.htm))
+

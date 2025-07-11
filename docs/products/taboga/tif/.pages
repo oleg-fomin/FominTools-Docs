@@ -1,0 +1,9 @@
+title: "Taboga Interactive Filter"
+arrange:
+  - index.md
+  - getting-started.md
+  - tutorial.md
+  - template-guide.md
+  - api-reference.md
+  - examples.md
+  - troubleshooting.md

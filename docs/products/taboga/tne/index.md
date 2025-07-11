@@ -12,4 +12,12 @@
 - [Troubleshooting](troubleshooting.md) - Common issues and solutions
 - [Tutorial](tutorial.md) - Complete tutorial for TNativeExcel
 
+## 📞 Support
+
+For support and additional information:
+
+- **Email**: [support@fomintools.com](mailto:support@fomintools.com)
+- **Fomin Tools**: [https://fomintools.com](https://fomintools.com)
+- **Original Author**: Edgard L. Riba ([Taboga Software](https://web.archive.org/web/20220928040343/http://tabogasoftware.com/taboga_report_s_data_exporter_library.htm))
+
 

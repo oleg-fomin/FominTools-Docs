@@ -35,3 +35,12 @@ TRDE is available for a fixed price including source code, templates, and techni
 ## 🛫 Getting Started
 
 Begin with [Installation](installation.md) to set up TRDE, then explore [Export Formats](formats.md) to learn about available output options and supported formats.
+
+## 📞 Support
+
+For support and additional information:
+
+- **Email**: [support@fomintools.com](mailto:support@fomintools.com)
+- **Fomin Tools**: [https://fomintools.com](https://fomintools.com)
+- **Original Author**: Edgard L. Riba ([Taboga Software](https://web.archive.org/web/20220526080457/http://tabogasoftware.com/taboga_report_s_data_exporter_library31.htm))
+
