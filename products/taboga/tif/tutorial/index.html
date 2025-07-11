@@ -1,0 +1,3009 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../getting-started/">
+      
+      
+        <link rel="next" href="../template-guide/">
+      
+      
+      <link rel="icon" href="../../../../images/favicon2.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Tutorial - FominTools Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../css/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tutorial" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="FominTools Docs" class="md-header__button md-logo" aria-label="FominTools Docs" data-md-component="logo">
+      
+  <img src="../../../../images/logo_light.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FominTools Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tutorial
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../fomin/frb/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Products
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../KnowledgeBase/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  KnowledgeBase
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="FominTools Docs" class="md-nav__button md-logo" aria-label="FominTools Docs" data-md-component="logo">
+      
+  <img src="../../../../images/logo_light.png" alt="logo">
+
+    </a>
+    FominTools Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Products
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Products
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Fomin Tools
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Fomin Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../fomin/frb/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Fomin Report Builder
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_1" id="__nav_2_1_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            Fomin Report Builder
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../fomin/frb/features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Feature Highlights
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../fomin/frb/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation &amp; Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../fomin/frb/usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Using Fomin Report Builder
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../fomin/frb/developer-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Developer Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../fomin/frb/components/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Components
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../fomin/frb/glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../fomin/frb/support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Support &amp; Resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Taboga Software
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Taboga Software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tbl/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Taboga Barcode Library
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_1" id="__nav_2_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Taboga Barcode Library
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tbl/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tbl/barcode-types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Barcode Symbologies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tbl/handcode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Handcode Implementation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tbl/templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Template Implementation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tbl/reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Class Reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tbl/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Taboga Interactive Filter
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Taboga Interactive Filter
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Tutorial
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutorial
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Project Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-application-foundation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 🏗️ Application Foundation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 🏗️ Application Foundation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Data Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Application Setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-customer-browse-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 📋 Customer Browse Implementation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 📋 Customer Browse Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#window-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 Window Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#window-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎛️ Window Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initialization-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚡ Initialization Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initcomponents-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 InitComponents Implementation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-event-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 🎯 Event Handling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 🎯 Event Handling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filter-button-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Filter Button Events
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#browse-field-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Browse Field Events
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-browse-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 🎨 Browse Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 🎨 Browse Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#context-menu-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Context Menu Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-menu-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Dynamic Menu Updates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-advanced-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 📊 Advanced Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 📊 Advanced Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#products-browse-with-list-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 Products Browse with List Interface
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datetime-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      📅 Date/Time Filtering
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-filter-persistence" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 💾 Filter Persistence
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 💾 Filter Persistence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#save-filter-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Save Filter Implementation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-filter-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      📂 Load Filter Implementation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 🎯 Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 🎯 Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#performance-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Performance Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-experience" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 User Experience
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complete-working-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Complete Working Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      📖 Next Steps
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../template-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Template Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API Reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Examples
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tne/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Taboga Native Excel
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Taboga Native Excel
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tne/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tne/reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Class Reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tne/templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Template Implementation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tne/formatting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cell Formatting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tne/workbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Workbook Creation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tne/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tne/tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutorial
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../trde/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Report's Data Exporter
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_4" id="__nav_2_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Report's Data Exporter
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trde/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trde/formats/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Export Formats
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trde/templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Template Integration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trde/reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API Reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trde/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../KnowledgeBase/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    KnowledgeBase
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            KnowledgeBase
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Project Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-application-foundation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 🏗️ Application Foundation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 🏗️ Application Foundation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Data Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Application Setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-customer-browse-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 📋 Customer Browse Implementation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 📋 Customer Browse Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#window-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 Window Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#window-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎛️ Window Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initialization-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚡ Initialization Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initcomponents-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 InitComponents Implementation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-event-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 🎯 Event Handling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 🎯 Event Handling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filter-button-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Filter Button Events
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#browse-field-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Browse Field Events
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-browse-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 🎨 Browse Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 🎨 Browse Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#context-menu-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Context Menu Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-menu-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Dynamic Menu Updates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-advanced-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 📊 Advanced Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 📊 Advanced Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#products-browse-with-list-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 Products Browse with List Interface
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datetime-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      📅 Date/Time Filtering
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-filter-persistence" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 💾 Filter Persistence
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 💾 Filter Persistence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#save-filter-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Save Filter Implementation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-filter-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      📂 Load Filter Implementation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 🎯 Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 🎯 Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#performance-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Performance Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-experience" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 User Experience
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complete-working-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Complete Working Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      📖 Next Steps
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="tutorial">Tutorial<a class="headerlink" href="#tutorial" title="Permanent link">🔗</a></h1>
+<p>This comprehensive tutorial walks through implementing the Taboga Interactive Filter in real Clarion applications, based on the actual demo application included with the library.</p>
+<h2 id="project-overview">🎯 Project Overview<a class="headerlink" href="#project-overview" title="Permanent link">🔗</a></h2>
+<p>We'll build a complete customer management system with advanced filtering capabilities, demonstrating:</p>
+<ul>
+<li><strong>Customer Browse</strong> with basic filtering</li>
+<li><strong>Product Browse</strong> with list-box interface  </li>
+<li><strong>Inventory History</strong> with date/numeric filtering</li>
+<li><strong>Filter Persistence</strong> with save/load functionality</li>
+</ul>
+<h2 id="1-application-foundation">1. 🏗️ Application Foundation<a class="headerlink" href="#1-application-foundation" title="Permanent link">🔗</a></h2>
+<h3 id="data-structure">📊 Data Structure<a class="headerlink" href="#data-structure" title="Permanent link">🔗</a></h3>
+<div class="highlight"><pre><span></span><code>! Customer file structure
+Customers            FILE,DRIVER(&#39;TOPSPEED&#39;)
+KeyCustNumber          KEY(CUS:CustNumber),PRIMARY
+KeyFullName            KEY(CUS:LastName,CUS:FirstName,CUS:MI),DUP
+KeyCompany             KEY(CUS:Company),DUP
+KeyZipCode             KEY(CUS:ZipCode),DUP
+StateKey               KEY(CUS:State),DUP
+Record                 RECORD,PRE(CUS)
+CustNumber               LONG
+Company                  STRING(20)
+FirstName                STRING(20)
+MI                       STRING(1) 
+LastName                 STRING(25)
+Address1                 STRING(35)
+City                     STRING(25)
+State                    STRING(2)
+ZipCode                  STRING(10)
+                       END
+                     END
+</code></pre></div>
+<h3 id="application-setup">🔧 Application Setup<a class="headerlink" href="#application-setup" title="Permanent link">🔗</a></h3>
+<ol>
+<li>
+<p><strong>Add Extension</strong> to application
+<div class="highlight"><pre><span></span><code>! In Application Properties → Extensions
+[TABOGA] Enables &quot;InteractiveFilter&quot; functionality on the application/DLL
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Configure Multi-DLL</strong> (if applicable)
+<div class="highlight"><pre><span></span><code>! Project Conditional Compilation Symbols
+_TIntFilterLinkMode_=&gt;1;_TIntFilterDllMode_=&gt;0
+</code></pre></div></p>
+</li>
+</ol>
+<h2 id="2-customer-browse-implementation">2. 📋 Customer Browse Implementation<a class="headerlink" href="#2-customer-browse-implementation" title="Permanent link">🔗</a></h2>
+<h3 id="window-design">🎨 Window Design<a class="headerlink" href="#window-design" title="Permanent link">🔗</a></h3>
+<div class="highlight"><pre><span></span><code>Customers PROCEDURE 
+
+! Generated browse view
+BRW1::View:Browse    VIEW(Customers)
+                       PROJECT(CUS:Company)
+                       PROJECT(CUS:FirstName)
+                       PROJECT(CUS:MI)
+                       PROJECT(CUS:LastName)
+                       PROJECT(CUS:Address1)
+                       PROJECT(CUS:City)
+                       PROJECT(CUS:State)
+                       PROJECT(CUS:ZipCode)
+                     END
+
+! Browse queue
+Queue:Browse:1       QUEUE
+CUS:Company            LIKE(CUS:Company)
+CUS:FirstName          LIKE(CUS:FirstName)
+CUS:MI                 LIKE(CUS:MI)
+CUS:LastName           LIKE(CUS:LastName)
+CUS:Address1           LIKE(CUS:Address1)
+CUS:City               LIKE(CUS:City)
+CUS:State              LIKE(CUS:State)
+CUS:ZipCode            LIKE(CUS:ZipCode)
+CUS:CustNumber         LIKE(CUS:CustNumber)
+Mark                   BYTE
+ViewPosition           STRING(1024)
+                     END
+
+! Interactive Filter class
+TIF2                 CLASS(TInteractiveFilterClass)
+BrowseResetSort        PROCEDURE(BYTE Force),DERIVED
+BrowseSetFilter        PROCEDURE(STRING Filter,STRING Id),DERIVED
+InitComponents         PROCEDURE(),BYTE,PROC,DERIVED
+                     END
+</code></pre></div>
+<h3 id="window-definition">🎛️ Window Definition<a class="headerlink" href="#window-definition" title="Permanent link">🔗</a></h3>
+<div class="highlight"><pre><span></span><code>QuickWindow          WINDOW(&#39;Browse the Customers File&#39;),AT(,,447,197),RESIZE,CENTER
+  ! Main browse control
+  LIST,AT(8,30,434,124),USE(?Browse:1),FORMAT(&#39;80L(2)|M~Company~@s20@80L(2)|M~First Name~@s20@...&#39;),FROM(Queue:Browse:1)
+
+  ! Interactive Filter controls (added by template)
+  BUTTON,AT(5,158,14,14),USE(?TFilterFor),LEFT,ICON(&#39;tint_FilterFor.ico&#39;),FLAT
+  CHECK,AT(19,158,14,14),USE(?TFilterToggle),LEFT,ICON(&#39;tint_FilterToggle.ico&#39;),FLAT
+
+  ! Sort tabs for different views
+  SHEET,AT(4,4,443,172),USE(?CurrentTab)
+    TAB(&#39;Last Name/First Name&#39;),USE(?Tab:2)
+    TAB(&#39;Company&#39;),USE(?Tab:3)  
+    TAB(&#39;Zip Code&#39;),USE(?Tab:4)
+    TAB(&#39;State&#39;),USE(?Tab:5)
+  END
+
+  ! Standard browse buttons
+  BUTTON(&#39;&amp;Insert&#39;),AT(283,158,49,14),USE(?Insert:3)
+  BUTTON(&#39;&amp;Change&#39;),AT(336,158,49,14),USE(?Change:3) 
+  BUTTON(&#39;&amp;Delete&#39;),AT(389,158,49,14),USE(?Delete:3)
+  BUTTON(&#39;Close&#39;),AT(399,180,49,14),USE(?Close)
+END
+</code></pre></div>
+<h3 id="initialization-code">⚡ Initialization Code<a class="headerlink" href="#initialization-code" title="Permanent link">🔗</a></h3>
+<div class="highlight"><pre><span></span><code>ThisWindow.Init PROCEDURE
+ReturnValue          BYTE,AUTO
+  CODE
+  // ...standard ABC initialization...
+
+  ! Initialize Interactive Filter
+  TIF2.InitComponents
+  ?TFilterToggle{PROP:Use} = TIF2.isInteractiveFilterOn
+  TIF2.InteractiveFilterToggleControl = ?TFilterToggle
+  DISABLE(?TFilterToggle)
+
+  ! Setup filtering
+  TIF2.UpdateQuery(0)                                      ! Auto-populate fields
+  TIF2.InitPopup                                           ! Build popup menus
+  TIF2.CaseSensitivity = 0                                 ! Case insensitive
+
+  // ...rest of initialization...
+  RETURN ReturnValue
+</code></pre></div>
+<h3 id="initcomponents-implementation">🔧 InitComponents Implementation<a class="headerlink" href="#initcomponents-implementation" title="Permanent link">🔗</a></h3>
+<div class="highlight"><pre><span></span><code>TIF2.InitComponents PROCEDURE
+ReturnValue          BYTE,AUTO
+  CODE
+  ReturnValue = PARENT.InitComponents()
+
+  ! Core configuration
+  SELF.myWindow           &amp;= QuickWindow
+  SELF.CollectionName = &#39;Customers&#39;                        ! Filter collection name
+  SELF.AllowFreeFormQuery = FALSE
+  SELF.BrowseControl    = ?Browse:1
+  SELF.BrowseView      &amp;= BRW1::View:Browse
+  SELF.BrowseQueueRef  &amp;= Queue:Browse:1
+
+  ! Filter persistence
+  SELF.AllowQueryPersistance = TRUE
+  SELF.LoadFilterEvent   = 4070                            ! Load filter event
+  SELF.SaveFilterEvent   = 4071                            ! Save filter event
+
+  ! UI configuration
+  SELF.OperatorInterface = 0                               ! 0=buttons, 1=list-box
+
+  RETURN ReturnValue
+</code></pre></div>
+<h2 id="3-event-handling">3. 🎯 Event Handling<a class="headerlink" href="#3-event-handling" title="Permanent link">🔗</a></h2>
+<h3 id="filter-button-events">📋 Filter Button Events<a class="headerlink" href="#filter-button-events" title="Permanent link">🔗</a></h3>
+<div class="highlight"><pre><span></span><code>ThisWindow.TakeAccepted PROCEDURE
+ReturnValue          BYTE,AUTO
+  CODE
+  // ...existing code...
+
+  CASE ACCEPTED()
+  OF ?TFilterFor
+    ThisWindow.Update()
+    x# = TIF2.FilterFor()                                  ! Show filter dialog
+    TIF2.FromButton = FALSE                                ! Reset button flag
+
+  OF ?TFilterToggle
+    IF TIF2.isInteractiveFilterOn AND TIF2.GetFilter()
+       TIF2.ApplyFilter()                                  ! Re-apply filter
+    ELSE
+       TIF2.DisableFilter()                                ! Disable filter
+    END
+    SELECT(TIF2.BrowseControl)
+  END
+
+  RETURN PARENT.TakeAccepted()
+</code></pre></div>
+<h3 id="browse-field-events">🔍 Browse Field Events<a class="headerlink" href="#browse-field-events" title="Permanent link">🔗</a></h3>
+<div class="highlight"><pre><span></span><code>ThisWindow.TakeFieldEvent PROCEDURE
+ReturnValue          BYTE,AUTO
+  CODE
+  // ...existing code...
+
+  CASE FIELD()
+  OF ?Browse:1
+    CASE EVENT()
+    ELSE
+       ! Filter by selection (equals)
+       IF EVENT() = 4064
+          TIF2.FilterOnOperator(e_tint_equals)
+       END
+
+       ! Filter excluding selection (not equals)
+       IF EVENT() = 4065
+          TIF2.FilterOnOperator(e_tint_NotEquals)
+       END
+
+       ! Remove filter
+       IF EVENT() = 4067
+          TIF2.FilterRemove
+       END
+
+       ! Context-sensitive filtering
+       CASE EVENT()
+       OF 4068  ! Contains/Less than or equal
+          CASE(TIF2.CurrentType)
+          OF 1     ! String (Contains/Does not contain)....
+             TIF2.FilterOnOperator(e_tint_Contains)
+          OF 2     ! Numeric (Less than or equal/More than or equal)...&#39;
+             TIF2.FilterOnOperator(e_tint_LessOrEqualThan)
+          OF 3     ! Date (On or before/On or after)....&#39;
+             TIF2.FilterOnOperator(e_tint_LessOrEqualThan)
+          OF 4     ! Time (On or before/On or after)....&#39;
+             TIF2.FilterOnOperator(e_tint_LessOrEqualThan)
+          END
+
+       OF 4069  ! Not contains/Greater than or equal
+          CASE(TIF2.CurrentType)
+          OF 1     ! String (Contains/Does not contain)....
+             TIF2.FilterOnOperator(e_tint_NotContains)
+          OF 2     ! Numeric (Less than or equal/More than or equal)...&#39;
+             TIF2.FilterOnOperator(e_tint_LargerOrEqualThan)
+          OF 3     ! Date (On or before/On or after)....&#39;
+             TIF2.FilterOnOperator(e_tint_LargerOrEqualThan)
+          OF 4     ! Time (On or before/On or after)....&#39;
+             TIF2.FilterOnOperator(e_tint_LargerOrEqualThan)
+          END
+       END
+
+       ! Save/Load filter events
+       IF EVENT() = TIF2.LoadFilterEvent
+          TInteractiveFilter_LoadFilter(TIF2)
+          POST(EVENT:NewSelection,?Browse:1)
+       END
+       IF EVENT() = TIF2.SaveFilterEvent
+          TInteractiveFilter_SaveFilter(TIF2)
+          SELECT(?Browse:1)
+       END
+    END
+  END
+
+  RETURN PARENT.TakeFieldEvent()
+</code></pre></div>
+<h2 id="4-browse-integration">4. 🎨 Browse Integration<a class="headerlink" href="#4-browse-integration" title="Permanent link">🔗</a></h2>
+<h3 id="context-menu-setup">📊 Context Menu Setup<a class="headerlink" href="#context-menu-setup" title="Permanent link">🔗</a></h3>
+<div class="highlight"><pre><span></span><code>BRW1.SetAlerts PROCEDURE
+  CODE
+  ! Add filter items to browse popup
+  SELF.Popup.AddItem(TIF2.FilterBySelectionText,&#39;TFilterSelection&#39;)
+  SELF.Popup.AddItemEvent(&#39;TFilterSelection&#39;,4064,?Browse:1)
+  SELF.Popup.SetIcon(&#39;TFilterSelection&#39;,&#39;tint_FilterBySelection.ico&#39;)
+
+  SELF.Popup.AddItem(TIF2.FilterExcludingSelectionText,&#39;TFilterNotSelection&#39;)
+  SELF.Popup.AddItemEvent(&#39;TFilterNotSelection&#39;,4065,?Browse:1)
+  SELF.Popup.SetIcon(&#39;TFilterNotSelection&#39;,&#39;tint_FilterExcludingSelection.ico&#39;)
+
+  ! Dynamic context-sensitive items
+  SELF.Popup.AddItem(&#39;&#39;,&#39;TFilterExtra1&#39;)
+  SELF.Popup.AddItemEvent(&#39;TFilterExtra1&#39;,4068,?Browse:1)
+  SELF.Popup.SetIcon(&#39;TFilterExtra1&#39;,&#39;tint_Empty.ico&#39;)
+
+  SELF.Popup.AddItem(&#39;&#39;,&#39;TFilterExtra2&#39;)
+  SELF.Popup.AddItemEvent(&#39;TFilterExtra2&#39;,4069,?Browse:1)
+  SELF.Popup.SetIcon(&#39;TFilterExtra2&#39;,&#39;tint_Empty.ico&#39;)
+
+  SELF.Popup.AddItem(&#39;-&#39;,&#39;TFilterExtraSeparator&#39;)
+  TIF2.ExtraPopupItemsAdded = TRUE
+
+  ! Filter management items
+  SELF.Popup.AddItemMimic(&#39;TFilterFor&#39;,?TFilterFor,TIF2.FilterForText)
+  SELF.Popup.AddItem(TIF2.FilterRemoveText,&#39;TFilterRemove&#39;)
+  SELF.Popup.AddItemEvent(&#39;TFilterRemove&#39;,4067,?Browse:1)
+  SELF.Popup.SetIcon(&#39;TFilterRemove&#39;,&#39;tint_FilterRemove.ico&#39;)
+  SELF.Popup.AddItem(&#39;-&#39;,&#39;TFilterSeparator&#39;)
+
+  PARENT.SetAlerts
+</code></pre></div>
+<h3 id="dynamic-menu-updates">🔄 Dynamic Menu Updates<a class="headerlink" href="#dynamic-menu-updates" title="Permanent link">🔗</a></h3>
+<div class="highlight"><pre><span></span><code>BRW1.TakeNewSelection PROCEDURE
+xQueueFieldNo   SHORT
+xField          CSTRING(101)
+xTDisable       BYTE(1)
+  CODE
+  IF ?Browse:1{PROPLIST:MouseDownRow} &lt;&gt; 0 AND ?Browse:1{PROPLIST:MouseDownZone}=LISTZONE:Field
+    SELF.UpdateBuffer
+    xQueueFieldNo = ?Browse:1{PROPLIST:FieldNo,?Browse:1{PROPLIST:MouseDownField}}
+    xField = UPPER(CLIP(WHO(Queue:Browse:1,xQueueFieldNo)))
+
+    IF TIF2.SetCurrentInfo(xField,xQueueFieldNo)
+       ! Update menu text with current field/data
+       SELF.Popup.SetText(&#39;TFilterSelection&#39;,TIF2.ReplaceMacro(TIF2.EqualsMacro,TIF2.EqualsBlank))
+       SELF.Popup.SetText(&#39;TFilterNotSelection&#39;,TIF2.ReplaceMacro(TIF2.NotEqualsMacro,TIF2.NotEqualsBlank))
+
+       ! Handle blank data
+       IF TIF2.isCurrentDataBlank
+          SELF.Popup.DeleteItem(&#39;TFilterExtra1&#39;)
+          SELF.Popup.DeleteItem(&#39;TFilterExtra2&#39;)
+          TIF2.ExtraPopupItemsAdded = FALSE
+       ELSE
+          ! Re-add context items if needed
+          IF TIF2.ExtraPopupItemsAdded = FALSE
+             SELF.Popup.AddItem(&#39;&#39;,&#39;TFilterExtra1&#39;,&#39;TFilterNotSelection&#39;,0)
+             SELF.Popup.AddItemEvent(&#39;TFilterExtra1&#39;,4068,?Browse:1)
+             SELF.Popup.SetIcon(&#39;TFilterExtra1&#39;,&#39;tint_Empty.ico&#39;)
+             SELF.Popup.AddItem(&#39;&#39;,&#39;TFilterExtra2&#39;,&#39;TFilterExtra1&#39;,0)
+             SELF.Popup.AddItemEvent(&#39;TFilterExtra2&#39;,4069,?Browse:1)
+             SELF.Popup.SetIcon(&#39;TFilterExtra2&#39;,&#39;tint_Empty.ico&#39;)
+             TIF2.ExtraPopupItemsAdded = TRUE
+          END
+
+          ! Set context-sensitive text based on data type
+          SELF.Popup.SetText(&#39;TFilterExtra1&#39;,CHOOSE(TIF2.CurrentType,|
+            TIF2.ReplaceMacro(TIF2.ContainsMacro),|          ! String
+            TIF2.ReplaceMacro(TIF2.LessOrEqualMacro),|       ! Numeric
+            TIF2.ReplaceMacro(TIF2.OnOrBeforeMacro)))        ! Date
+
+          SELF.Popup.SetText(&#39;TFilterExtra2&#39;,CHOOSE(TIF2.CurrentType,|
+            TIF2.ReplaceMacro(TIF2.NotContainsMacro),|       ! String
+            TIF2.ReplaceMacro(TIF2.MoreOrEqualMacro),|       ! Numeric
+            TIF2.ReplaceMacro(TIF2.OnOrAfterMacro)))         ! Date
+       END
+
+       ! Enable/disable menu items
+       SELF.Popup.SetItemEnable(&#39;TFilterSelection&#39;,TRUE)
+       SELF.Popup.SetItemEnable(&#39;TFilterNotSelection&#39;,TRUE)
+       SELF.Popup.SetItemEnable(&#39;TFilterFor&#39;,TRUE)
+
+       IF TIF2.isInteractiveFilterOn = TRUE
+          SELF.Popup.SetItemEnable(&#39;TFilterRemove&#39;,TRUE)
+       ELSE
+          SELF.Popup.SetItemEnable(&#39;TFilterRemove&#39;,FALSE)
+       END
+
+       SELF.Popup.SetItemEnable(&#39;TFilterExtra1&#39;,TRUE)
+       SELF.Popup.SetItemEnable(&#39;TFilterExtra2&#39;,TRUE)
+       xTDisable = FALSE
+    ELSE
+       xTDisable = TRUE
+    END
+  END
+
+  ! Disable all filter options if no valid field
+  IF xTDisable
+    SELF.Popup.SetText(&#39;TFilterSelection&#39;,TIF2.FilterBySelectionText)
+    SELF.Popup.SetText(&#39;TFilterNotSelection&#39;,TIF2.FilterExcludingSelectionText)
+    SELF.Popup.SetText(&#39;TFilterFor&#39;,TIF2.FilterForText)
+    SELF.Popup.SetText(&#39;TFilterRemove&#39;,TIF2.FilterRemoveText)
+    SELF.Popup.SetText(&#39;TFilterExtra1&#39;,TIF2.FilterByContainsText)
+    SELF.Popup.SetText(&#39;TFilterExtra2&#39;,TIF2.FilterByNotContainsText)
+
+    SELF.Popup.SetItemEnable(&#39;TFilterSelection&#39;,FALSE)
+    SELF.Popup.SetItemEnable(&#39;TFilterNotSelection&#39;,FALSE)
+    SELF.Popup.SetItemEnable(&#39;TFilterFor&#39;,FALSE)
+    SELF.Popup.SetItemEnable(&#39;TFilterRemove&#39;,FALSE)
+    SELF.Popup.SetItemEnable(&#39;TFilterExtra1&#39;,FALSE)
+    SELF.Popup.SetItemEnable(&#39;TFilterExtra2&#39;,FALSE)
+  END
+
+  PARENT.TakeNewSelection
+</code></pre></div>
+<h2 id="5-advanced-configuration">5. 📊 Advanced Configuration<a class="headerlink" href="#5-advanced-configuration" title="Permanent link">🔗</a></h2>
+<h3 id="products-browse-with-list-interface">🎨 Products Browse with List Interface<a class="headerlink" href="#products-browse-with-list-interface" title="Permanent link">🔗</a></h3>
+<p>For the Products browse, we'll use the list-box operator interface:</p>
+<div class="highlight"><pre><span></span><code>TIF11.InitComponents PROCEDURE
+ReturnValue          BYTE,AUTO
+  CODE
+  ReturnValue = PARENT.InitComponents()
+
+  SELF.myWindow           &amp;= QuickWindow
+  SELF.CollectionName = &#39;Products&#39;
+  SELF.OperatorInterface = 1                               ! Use list-box interface
+  SELF.InteractiveFilterResultFEQ = ?TFilter              ! Display current filter
+  SELF.AllowFreeFormQuery = FALSE
+
+  RETURN ReturnValue
+</code></pre></div>
+<h3 id="datetime-filtering">📅 Date/Time Filtering<a class="headerlink" href="#datetime-filtering" title="Permanent link">🔗</a></h3>
+<p>For the Inventory History browse with date/numeric data:</p>
+<div class="highlight"><pre><span></span><code>TIF7.InitComponents PROCEDURE
+  CODE
+  // ...existing code...
+
+  SELF.CollectionName = &#39;InvHist&#39;
+  SELF.AllowFreeFormQuery = FALSE                          ! Disable free-form
+  SELF.OperatorInterface = 0                               ! Use button interface
+
+  RETURN ReturnValue
+</code></pre></div>
+<h2 id="6-filter-persistence">6. 💾 Filter Persistence<a class="headerlink" href="#6-filter-persistence" title="Permanent link">🔗</a></h2>
+<h3 id="save-filter-implementation">🔄 Save Filter Implementation<a class="headerlink" href="#save-filter-implementation" title="Permanent link">🔗</a></h3>
+<div class="highlight"><pre><span></span><code>TInteractiveFilter_SaveFilter PROCEDURE(* TInteractiveFilterClass pIFObj,&lt;STRING pFilterName&gt;)
+xSavedFilterName LIKE(_TF:SavedFilterName)
+i               LONG
+j               LONG
+FilesOpened     BYTE(0)
+
+Window WINDOW(&#39;Save Filter&#39;),AT(,,269,38),GRAY,MDI
+  PROMPT(&#39;Filter Name:&#39;),AT(3,6),USE(?Prompt1)
+  ENTRY(@s100),AT(49,6,212,11),USE(xSavedFilterName)
+  BUTTON(&#39;&amp;OK&#39;),AT(181,21,35,14),USE(?OkButton),DEFAULT
+  BUTTON(&#39;&amp;Cancel&#39;),AT(226,21,36,14),USE(?CancelButton)
+END
+
+  CODE
+  ! Get filter name from user if not provided
+  IF NOT OMITTED(2)
+     xSavedFilterName = CLIP(pFilterName)
+  ELSE
+     xSavedFilterName = &#39;&#39;
+  END
+
+  ! Show dialog to get filter name if needed
+  IF NOT xSavedFilterName
+     OPEN(Window)
+     ACCEPT
+        CASE FIELD()
+        OF ?OkButton
+           POST(EVENT:CloseWindow)
+        OF ?CancelButton
+           xSavedFilterName = &#39;&#39;
+           POST(EVENT:CloseWindow)
+        END
+     END
+     CLOSE(Window)
+     IF NOT xSavedFilterName
+        RETURN TRUE                                        ! User cancelled
+     END
+  END
+
+  ! Save to database
+  DO OpenFiles
+  CLEAR(_TFilters)
+  _TF:FilterCollectionName = pIFObj.CollectionName
+  _TF:SavedFilterName = xSavedFilterName
+  GET(_TFilters,_TF:byFilterCollectionName)
+  IF ERRORCODE()
+     Access:_TFilters.PrimeRecord(TRUE)
+     Access:_TFilters.Insert
+  ELSE
+     DO DeleteFilterRows                                   ! Clear existing rows
+  END
+
+  ! Save individual filter components
+  j = RECORDS(pIFObj.FilterRows)
+  LOOP i = 1 TO j
+     GET(pIFObj.FilterRows,i)
+     _TFRow:SavedFilterID = _TF:SavedFilterID
+     _TFRow:ID = i
+     _TFRow:Filter = pIFObj.FilterRows.Filter
+     _TFRow:IsManual = pIFObj.FilterRows.IsManual
+     _TFRow:FieldName = pIFObj.FilterRows.FieldName
+     _TFRow:Picture = pIFObj.FilterRows.Picture
+     _TFRow:CaseSensitivity = pIFObj.FilterRows.CaseSensitivity
+     _TFRow:Operator = pIFObj.FilterRows.Operator
+     _TFRow:ConditionLow = pIFObj.FilterRows.ConditionLow
+     _TFRow:ConditionHigh = pIFObj.FilterRows.ConditionHigh
+     _TFRow:JoinOp = pIFObj.FilterRows.JoinOp
+     _TFRow:NewGroup = pIFObj.FilterRows.NewGroup
+     _TFRow:NewGroupJoinOp = pIFObj.FilterRows.NewGroupJoinOp
+     ADD(_TFilterRows)
+  END
+
+  DO CloseFiles
+  RETURN FALSE
+
+OpenFiles  ROUTINE
+  Access:_TFilters.Open
+  Access:_TFilters.UseFile
+  Access:_TFilterRows.Open
+  Access:_TFilterRows.UseFile
+  FilesOpened = True
+
+CloseFiles ROUTINE
+  IF FilesOpened
+     Access:_TFilters.Close
+     Access:_TFilterRows.Close
+     FilesOpened = False
+  END
+
+DeleteFilterRows ROUTINE
+  ! Delete existing filter rows for this saved filter
+  // ...implementation...
+</code></pre></div>
+<h3 id="load-filter-implementation">📂 Load Filter Implementation<a class="headerlink" href="#load-filter-implementation" title="Permanent link">🔗</a></h3>
+<div class="highlight"><pre><span></span><code>TInteractiveFilter_LoadFilter PROCEDURE(* TInteractiveFilterClass pIFObj)
+! Browse and load saved filters
+v_TFilterRows    VIEW(_TFilterRows),ORDER(&#39;_TFRow:SavedFilterID,_TFRow:ID&#39;),FILTER(&#39;_TFRow:SavedFilterID=_TF:SavedFilterID&#39;)
+i               LONG
+xAppendFilterAction STRING(5)
+
+  CODE
+  ! Show browser for saved filters in this collection
+  _TF:FilterCollectionName = pIFObj.CollectionName
+
+  ! User selects filter and action (Replace/AND/OR)
+  ! xAppendFilterAction contains: &#39;&#39;, &#39;AND&#39;, or &#39;OR&#39;
+
+  ! Load and apply selected filter
+  i = 0
+  OPEN(v_TFilterRows)
+  SET(v_TFilterRows)
+  LOOP
+     NEXT(v_TFilterRows)
+     IF ERRORCODE() THEN BREAK.
+     i += 1
+
+     ! Copy filter row data
+     pIFObj.FilterRows.Filter = _TFRow:Filter
+     pIFObj.FilterRows.IsManual = _TFRow:IsManual
+     pIFObj.FilterRows.FieldName = _TFRow:FieldName
+     pIFObj.FilterRows.Picture = _TFRow:Picture
+     pIFObj.FilterRows.CaseSensitivity = _TFRow:CaseSensitivity
+     pIFObj.FilterRows.Operator = _TFRow:Operator
+     pIFObj.FilterRows.ConditionLow = _TFRow:ConditionLow
+     pIFObj.FilterRows.ConditionHigh = _TFRow:ConditionHigh
+     pIFObj.FilterRows.JoinOp = _TFRow:JoinOp
+     pIFObj.FilterRows.NewGroup = _TFRow:NewGroup
+     pIFObj.FilterRows.NewGroupJoinOp = _TFRow:NewGroupJoinOp
+
+     ! Handle filter combination for first row
+     IF i = 1
+        IF xAppendFilterAction = &#39;AND&#39;
+           pIFObj.FilterRows.NewGroupJoinOp = &#39;AND&#39;
+           pIFObj.FilterRows.NewGroup = TRUE
+        ELSIF xAppendFilterAction = &#39;OR&#39;
+           pIFObj.FilterRows.NewGroupJoinOp = &#39;OR&#39;
+           pIFObj.FilterRows.NewGroup = TRUE
+        END
+     END
+
+     ADD(pIFObj.FilterRows)
+  END
+  CLOSE(v_TFilterRows)
+
+  ! Apply the loaded filter
+  pIFObj.ApplyFilter
+</code></pre></div>
+<h2 id="7-best-practices">7. 🎯 Best Practices<a class="headerlink" href="#7-best-practices" title="Permanent link">🔗</a></h2>
+<h3 id="performance-optimization">✅ Performance Optimization<a class="headerlink" href="#performance-optimization" title="Permanent link">🔗</a></h3>
+<ol>
+<li>
+<p><strong>Index Usage</strong>
+<div class="highlight"><pre><span></span><code>! Ensure filtered fields are properly indexed
+CUS:StateKey         KEY(CUS:State),DUP,NOCASE,OPT
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Case Sensitivity</strong>
+<div class="highlight"><pre><span></span><code>! For SQL drivers, use case sensitive (generates better queries)
+SELF.CaseSensitivity = 1  ! SQL
+SELF.CaseSensitivity = 0  ! ISAM
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Field Selection</strong>
+<div class="highlight"><pre><span></span><code>! Only include fields users will actually filter on
+SELF.AddItemOverride(&#39;CUS:CustNumber&#39;,&#39;&#39;,TRUE)  ! Skip internal IDs
+</code></pre></div></p>
+</li>
+</ol>
+<h3 id="user-experience">🎨 User Experience<a class="headerlink" href="#user-experience" title="Permanent link">🔗</a></h3>
+<ol>
+<li>
+<p><strong>Visual Feedback</strong>
+<div class="highlight"><pre><span></span><code>! Always show filter status
+SELF.InteractiveFilterResultFEQ = ?FilterDisplay
+SELF.DisplayFilterOnToggleTip = TRUE
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Consistent Naming</strong>
+<div class="highlight"><pre><span></span><code>! Use descriptive collection names
+SELF.CollectionName = &#39;CustomerBrowse&#39;  ! Not just &#39;Customers&#39;
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Icon Consistency</strong>
+<div class="highlight"><pre><span></span><code>! Include all required icons in your project
+#PROJECT(&#39;tint_FilterFor.ico&#39;)
+#PROJECT(&#39;tint_FilterToggle.ico&#39;)
+// ...etc
+</code></pre></div></p>
+</li>
+</ol>
+<h2 id="complete-working-example">🚀 Complete Working Example<a class="headerlink" href="#complete-working-example" title="Permanent link">🔗</a></h2>
+<p>Here's the complete customer browse implementation:</p>
+<div class="highlight"><pre><span></span><code>Customers PROCEDURE 
+
+! All declarations from above...
+
+  CODE
+  GlobalResponse = ThisWindow.Run()
+
+ThisWindow.Init PROCEDURE
+ReturnValue          BYTE,AUTO
+  CODE
+  // ...standard initialization...
+
+  ! Interactive Filter setup
+  TIF2.InitComponents
+  ?TFilterToggle{PROP:Use} = TIF2.isInteractiveFilterOn
+  TIF2.InteractiveFilterToggleControl = ?TFilterToggle
+  DISABLE(?TFilterToggle)
+
+  TIF2.UpdateQuery(0)
+  TIF2.InitPopup
+  TIF2.CaseSensitivity = 0
+
+  // ...rest of initialization...
+  RETURN ReturnValue
+
+! All event handling methods from above...
+</code></pre></div>
+<h2 id="next-steps">📖 Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">🔗</a></h2>
+<ul>
+<li><strong><a href="../template-guide/">Template Guide</a></strong> - Advanced template configuration</li>
+<li><strong><a href="../api-reference/">API Reference</a></strong> - Complete method reference</li>
+<li><strong><a href="../examples/">Examples</a></strong> - More implementation examples</li>
+</ul>
+<hr />
+<p><em>You now have a complete understanding of implementing the Taboga Interactive Filter!</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/oleg-fomin" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.path", "navigation.tracking", "navigation.top", "content.code.copy", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="../../../../assets/js/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

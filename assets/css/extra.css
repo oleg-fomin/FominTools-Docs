@@ -1,0 +1,89 @@
+/* Custom styles for Fomin Tools documentation */
+
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.products-grid {
+    display: grid;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.products-grid h3 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #2c3e50;
+}
+
+.products-grid img {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.features-grid > div {
+    padding: 1.5rem;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    background: #f8f9fa;
+}
+
+.heritage-section {
+    background: #f4f4f4;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.contact-section {
+    background: #e3f2fd;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.getting-started {
+    background: #f1f8e9;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.footer-note {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    padding: 2rem 0;
+    border-top: 1px solid #eee;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .products-grid h3 {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-section {
+        padding: 1.5rem;
+    }
+}

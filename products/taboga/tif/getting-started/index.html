@@ -1,0 +1,2557 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../tutorial/">
+      
+      
+      <link rel="icon" href="../../../../images/favicon2.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Getting Started - FominTools Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../css/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#getting-started" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="FominTools Docs" class="md-header__button md-logo" aria-label="FominTools Docs" data-md-component="logo">
+      
+  <img src="../../../../images/logo_light.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            FominTools Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Getting Started
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../fomin/frb/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Products
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../KnowledgeBase/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  KnowledgeBase
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="FominTools Docs" class="md-nav__button md-logo" aria-label="FominTools Docs" data-md-component="logo">
+      
+  <img src="../../../../images/logo_light.png" alt="logo">
+
+    </a>
+    FominTools Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Products
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Products
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Fomin Tools
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Fomin Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../fomin/frb/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Fomin Report Builder
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1_1" id="__nav_2_1_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            Fomin Report Builder
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../fomin/frb/features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Feature Highlights
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../fomin/frb/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation &amp; Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../fomin/frb/usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Using Fomin Report Builder
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../fomin/frb/developer-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Developer Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../fomin/frb/components/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Components
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../fomin/frb/glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../fomin/frb/support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Support &amp; Resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Taboga Software
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Taboga Software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tbl/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Taboga Barcode Library
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_1" id="__nav_2_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Taboga Barcode Library
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tbl/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tbl/barcode-types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Barcode Symbologies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tbl/handcode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Handcode Implementation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tbl/templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Template Implementation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tbl/reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Class Reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tbl/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Taboga Interactive Filter
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Taboga Interactive Filter
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📦 Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#library-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Library Files
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Library Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#libsrc-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 LibSrc Directory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 Template Directory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icon-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 Icon Files
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template-registration" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Template Registration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Basic Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Basic Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-enable-extension" class="md-nav__link">
+    <span class="md-ellipsis">
+      1️⃣ Enable Extension
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-add-to-browse-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      2️⃣ Add to Browse Window
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2️⃣ Add to Browse Window">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default-controls-added" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 Default Controls Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-configure-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      3️⃣ Configure Template
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3️⃣ Configure Template">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Query Tab
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Case Sensitivity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-persistence" class="md-nav__link">
+    <span class="md-ellipsis">
+      💾 Filter Persistence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-field-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      4️⃣ Field Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4️⃣ Field Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auto-population-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤖 Auto-Population (Recommended)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Manual Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generated-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Generated Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔄 Generated Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-declaration" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Class Declaration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚡ Initialization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Event Handling
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 UI Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎨 UI Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#browse-popup-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Browse Popup Menu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Visual Feedback
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Verification
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Next Steps
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutorial
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../template-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Template Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API Reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Examples
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tne/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Taboga Native Excel
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Taboga Native Excel
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tne/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tne/reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Class Reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tne/templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Template Implementation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tne/formatting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cell Formatting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tne/workbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Workbook Creation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tne/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tne/tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutorial
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../trde/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Report's Data Exporter
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_4" id="__nav_2_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Report's Data Exporter
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trde/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trde/formats/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Export Formats
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trde/templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Template Integration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trde/reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API Reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trde/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../KnowledgeBase/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    KnowledgeBase
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            KnowledgeBase
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📦 Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#library-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Library Files
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Library Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#libsrc-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 LibSrc Directory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 Template Directory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icon-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 Icon Files
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template-registration" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Template Registration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Basic Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Basic Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-enable-extension" class="md-nav__link">
+    <span class="md-ellipsis">
+      1️⃣ Enable Extension
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-add-to-browse-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      2️⃣ Add to Browse Window
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2️⃣ Add to Browse Window">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default-controls-added" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 Default Controls Added
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-configure-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      3️⃣ Configure Template
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3️⃣ Configure Template">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Query Tab
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Case Sensitivity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-persistence" class="md-nav__link">
+    <span class="md-ellipsis">
+      💾 Filter Persistence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-field-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      4️⃣ Field Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4️⃣ Field Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auto-population-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤖 Auto-Population (Recommended)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Manual Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generated-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Generated Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔄 Generated Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-declaration" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Class Declaration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚡ Initialization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Event Handling
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 UI Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎨 UI Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#browse-popup-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Browse Popup Menu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Visual Feedback
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Verification
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Next Steps
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">🔗</a></h1>
+<h2 id="installation">📦 Installation<a class="headerlink" href="#installation" title="Permanent link">🔗</a></h2>
+<h3 id="library-files">🔧 Library Files<a class="headerlink" href="#library-files" title="Permanent link">🔗</a></h3>
+<p>Ensure the following files are in your Clarion installation:</p>
+<h4 id="libsrc-directory">📁 LibSrc Directory<a class="headerlink" href="#libsrc-directory" title="Permanent link">🔗</a></h4>
+<div class="highlight"><pre><span></span><code>libsrc\
+├── TInteractiveFilter.INC    # Class definitions and includes
+├── TInteractiveFilter.CLW    # Class implementation
+└── TInteractiveFilter.TRN    # Translation strings
+</code></pre></div>
+<h4 id="template-directory">📁 Template Directory<a class="headerlink" href="#template-directory" title="Permanent link">🔗</a></h4>
+<div class="highlight"><pre><span></span><code>template\
+└── TInteractiveFilter.TPL   # Template definitions
+</code></pre></div>
+<h4 id="icon-files">🎨 Icon Files<a class="headerlink" href="#icon-files" title="Permanent link">🔗</a></h4>
+<div class="highlight"><pre><span></span><code>images\
+├── tint_FilterFor.ico
+├── tint_FilterToggle.ico
+├── tint_FilterBySelection.ico
+├── tint_FilterExcludingSelection.ico
+├── tint_FilterRemove.ico
+├── tint_Empty.ico
+├── tint_FreeFormQuery.ico
+├── tint_LoadQuery.ico
+└── tint_SaveQuery.ico
+</code></pre></div>
+<h3 id="template-registration">⚙️ Template Registration<a class="headerlink" href="#template-registration" title="Permanent link">🔗</a></h3>
+<ol>
+<li><strong>Open Clarion IDE</strong></li>
+<li><strong>Template Registry</strong> → <strong>Register Template</strong></li>
+<li><strong>Browse</strong> to <code>TInteractiveFilter.TPL</code></li>
+<li><strong>Confirm</strong> registration</li>
+</ol>
+<h2 id="basic-setup">🚀 Basic Setup<a class="headerlink" href="#basic-setup" title="Permanent link">🔗</a></h2>
+<h3 id="1-enable-extension">1️⃣ Enable Extension<a class="headerlink" href="#1-enable-extension" title="Permanent link">🔗</a></h3>
+<p>First, enable the Interactive Filter extension in your application:</p>
+<ol>
+<li><strong>Application Properties</strong> → <strong>Extensions</strong></li>
+<li><strong>Add Extension</strong> → <strong>[TABOGA] Enables "InteractiveFilter" functionality</strong></li>
+<li><strong>Configure</strong> multi-DLL settings if applicable</li>
+</ol>
+<div class="highlight"><pre><span></span><code>! Extension automatically adds global includes:
+INCLUDE(&#39;TInteractiveFilter.INC&#39;),ONCE
+</code></pre></div>
+<h3 id="2-add-to-browse-window">2️⃣ Add to Browse Window<a class="headerlink" href="#2-add-to-browse-window" title="Permanent link">🔗</a></h3>
+<p>Apply the control template to your browse procedure:</p>
+<ol>
+<li><strong>Select Browse Procedure</strong></li>
+<li><strong>Window Designer</strong> → <strong>Controls</strong></li>
+<li><strong>Add Control</strong> → <strong>[TABOGA] Interactive Filter for browse</strong></li>
+<li><strong>Position</strong> the filter controls on your window</li>
+</ol>
+<h4 id="default-controls-added">🎨 Default Controls Added<a class="headerlink" href="#default-controls-added" title="Permanent link">🔗</a></h4>
+<div class="highlight"><pre><span></span><code>BUTTON,AT(,,14,14),USE(?TFilterFor),ICON(&#39;tint_FilterFor.ico&#39;),FLAT
+CHECK,AT(14,0,14,14),USE(?TFilterToggle),ICON(&#39;tint_FilterToggle.ico&#39;),FLAT
+</code></pre></div>
+<h3 id="3-configure-template">3️⃣ Configure Template<a class="headerlink" href="#3-configure-template" title="Permanent link">🔗</a></h3>
+<h4 id="query-tab">📊 Query Tab<a class="headerlink" href="#query-tab" title="Permanent link">🔗</a></h4>
+<ul>
+<li>✅ <strong>Filter by selection</strong> - Right-click equals filtering</li>
+<li>✅ <strong>Filter excluding selection</strong> - Right-click not-equals filtering  </li>
+<li>✅ <strong>Filter for</strong> - Advanced filter dialog</li>
+<li>✅ <strong>Remove Filter</strong> - Clear all filters</li>
+<li>✅ <strong>Contains/Does Not Contain Pair</strong> - Context-sensitive options</li>
+</ul>
+<h4 id="case-sensitivity">🔧 Case Sensitivity<a class="headerlink" href="#case-sensitivity" title="Permanent link">🔗</a></h4>
+<ul>
+<li><strong>Force Case Sensitive</strong> - Exact case matching</li>
+<li><strong>Force Case Insensitive</strong> - Ignore case (default)</li>
+<li><strong>Manual</strong> - Driver-dependent default</li>
+</ul>
+<h4 id="filter-persistence">💾 Filter Persistence<a class="headerlink" href="#filter-persistence" title="Permanent link">🔗</a></h4>
+<div class="highlight"><pre><span></span><code>☑ Allow saving and loading filters
+  Save procedure: TInteractiveFilter_SaveFilter
+  Load procedure: TInteractiveFilter_LoadFilter
+</code></pre></div>
+<h3 id="4-field-configuration">4️⃣ Field Configuration<a class="headerlink" href="#4-field-configuration" title="Permanent link">🔗</a></h3>
+<h4 id="auto-population-recommended">🤖 Auto-Population (Recommended)<a class="headerlink" href="#auto-population-recommended" title="Permanent link">🔗</a></h4>
+<p><div class="highlight"><pre><span></span><code>☑ Auto Populate from BrowseBox
+</code></pre></div>
+- Automatically includes all browse columns
+- Override field titles as needed
+- Skip fields selectively</p>
+<h4 id="manual-configuration">📝 Manual Configuration<a class="headerlink" href="#manual-configuration" title="Permanent link">🔗</a></h4>
+<div class="highlight"><pre><span></span><code>! Add fields manually
+QBEField: CUS:Company
+QBETitle: Company Name
+QBEPicture: @s20
+QBENoCase: Yes
+</code></pre></div>
+<h2 id="generated-code">🔄 Generated Code<a class="headerlink" href="#generated-code" title="Permanent link">🔗</a></h2>
+<p>The template automatically generates the necessary integration code:</p>
+<h3 id="class-declaration">📋 Class Declaration<a class="headerlink" href="#class-declaration" title="Permanent link">🔗</a></h3>
+<div class="highlight"><pre><span></span><code>TIF2                 CLASS(TInteractiveFilterClass)
+BrowseResetSort        PROCEDURE(BYTE Force),DERIVED
+BrowseSetFilter        PROCEDURE(STRING Filter,STRING Id),DERIVED
+InitComponents         PROCEDURE(),BYTE,PROC,DERIVED
+                     END
+</code></pre></div>
+<h3 id="initialization">⚡ Initialization<a class="headerlink" href="#initialization" title="Permanent link">🔗</a></h3>
+<div class="highlight"><pre><span></span><code>! Automatic initialization in ThisWindow.Init
+TIF2.InitComponents
+?TFilterToggle{PROP:Use} = TIF2.isInteractiveFilterOn
+TIF2.InteractiveFilterToggleControl = ?TFilterToggle
+DISABLE(?TFilterToggle)
+
+TIF2.UpdateQuery(0)        ! Auto-populate fields
+TIF2.InitPopup            ! Setup context menus
+TIF2.CaseSensitivity = 0  ! Configure case handling
+</code></pre></div>
+<h3 id="event-handling">🎯 Event Handling<a class="headerlink" href="#event-handling" title="Permanent link">🔗</a></h3>
+<div class="highlight"><pre><span></span><code>! Filter button events
+OF ?TFilterFor
+  x# = TIF2.FilterFor()
+  TIF2.FromButton = FALSE
+
+OF ?TFilterToggle  
+  IF TIF2.isInteractiveFilterOn AND TIF2.GetFilter()
+     TIF2.ApplyFilter()
+  ELSE
+     TIF2.DisableFilter()
+  END
+</code></pre></div>
+<h2 id="ui-integration">🎨 UI Integration<a class="headerlink" href="#ui-integration" title="Permanent link">🔗</a></h2>
+<h3 id="browse-popup-menu">📊 Browse Popup Menu<a class="headerlink" href="#browse-popup-menu" title="Permanent link">🔗</a></h3>
+<p>The template automatically adds context menu items:</p>
+<ul>
+<li><strong>Filter by "Value"</strong> - Quick equal filter</li>
+<li><strong>Filter excluding "Value"</strong> - Quick not-equal filter  </li>
+<li><strong>Contains "Value"</strong> - String contains filter</li>
+<li><strong>On or before "Value"</strong> - Date/numeric comparison</li>
+<li><strong>Filter for...</strong> - Advanced dialog</li>
+<li><strong>Remove filter</strong> - Clear all filters</li>
+</ul>
+<h3 id="visual-feedback">🔧 Visual Feedback<a class="headerlink" href="#visual-feedback" title="Permanent link">🔗</a></h3>
+<ul>
+<li><strong>Toggle Button</strong> - Shows active filter state</li>
+<li><strong>Filter Display</strong> - Optional current filter text</li>
+<li><strong>Context-Sensitive Menus</strong> - Adapt to data type</li>
+</ul>
+<h2 id="verification">✅ Verification<a class="headerlink" href="#verification" title="Permanent link">🔗</a></h2>
+<p>After setup, verify the installation:</p>
+<ol>
+<li><strong>Compile</strong> your application successfully</li>
+<li><strong>Run</strong> and open a browse window</li>
+<li><strong>Right-click</strong> on any column - see filter options</li>
+<li><strong>Click</strong> the filter button - opens filter dialog</li>
+<li><strong>Apply</strong> a filter - see toggle button activate</li>
+</ol>
+<h2 id="next-steps">🚀 Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">🔗</a></h2>
+<ul>
+<li><strong><a href="../tutorial/">Tutorial</a></strong> - Detailed implementation walkthrough</li>
+<li><strong><a href="../template-guide/">Template Guide</a></strong> - Advanced configuration options</li>
+<li><strong><a href="../examples/">Examples</a></strong> - Real-world implementation examples</li>
+</ul>
+<hr />
+<p><em>You're now ready to add powerful filtering capabilities to your browse windows!</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/oleg-fomin" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.path", "navigation.tracking", "navigation.top", "content.code.copy", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="../../../../assets/js/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
