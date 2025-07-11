@@ -1,4 +1,4 @@
-# Taboga Barcode Library
+# Overview
 
 **Taboga Barcode Library** is a professional **2D** barcode generation component for Clarion version 6 and above. It consists of a pure Clarion code CLASS library that will draw and print barcodes in your programs.
 

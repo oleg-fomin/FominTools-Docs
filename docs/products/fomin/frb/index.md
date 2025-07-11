@@ -8,7 +8,7 @@ Whether you're an independent developer maintaining legacy systems or a corporat
 
 ---
 
-## ✨ Why Fomin Report Builder?
+## ✨ Why FRB?
 
 - **Empower users**: Let non-technical users design, format, and filter their own reports at runtime.
 - **No royalties**: Distribute the FRB DLL freely with your compiled applications.

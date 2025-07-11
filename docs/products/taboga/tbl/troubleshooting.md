@@ -2,7 +2,7 @@
 
 ## ⚠️ Common Issues
 
-### Drawing Issues
+### 🎨 Drawing Issues
 - **ThisWindow.Reset**: Drawing barcode in ThisWindow.Reset may crash when using FONTDIALOG
   - Solution: Draw barcode only when needed instead of Reset
   
@@ -27,32 +27,14 @@
 
 ## 🔍 Error Codes
 
-### BCError:NoError (0)
-Operation completed successfully
-
-### BCError:WindowNotInitialized (1)
-Invalid window/report reference
-- Check Init parameters
-- Verify window/report exists
-
-### BCError:BarcodeTypeNotSet (2)
-Missing or invalid barcode type
-- Check Draw parameters
-- Verify barcode type constant
-
-### BCError:BadCheckDigit (3)
-Invalid check digit provided
-- Either provide complete value with check digit
-- Or omit check digit for auto-calculation
-
-### BCError:InvalidValue (4)
-Data doesn't match barcode requirements
-- Check data length (e.g., UPC-A needs 11 digits)
-- Verify character set matches barcode type
-
-### BCError:OtherErrors (5)
-Special case errors
-- Example: UPC-E system number must be 0 or 1
+| Error Code | Value | Description | Solution |
+|------------|-------|-------------|----------|
+| BCError:NoError | 0 | Operation completed successfully | - |
+| BCError:WindowNotInitialized | 1 | Invalid window/report reference | Check Init parameters<br>Verify window/report exists |
+| BCError:BarcodeTypeNotSet | 2 | Missing or invalid barcode type | Check Draw parameters<br>Verify barcode type constant |
+| BCError:BadCheckDigit | 3 | Invalid check digit provided | Either provide complete value with check digit<br>Or omit check digit for auto-calculation |
+| BCError:InvalidValue | 4 | Data doesn't match barcode requirements | Check data length (e.g., UPC-A needs 11 digits)<br>Verify character set matches barcode type |
+| BCError:OtherErrors | 5 | Special case errors | Example: UPC-E system number must be 0 or 1 |
 
 ## 💡 Best Practices
 
@@ -60,4 +42,5 @@ Special case errors
 2. Call Reset after any property changes
 3. Verify data matches barcode type requirements
 4. Test on target printer resolution
-5. Handle error returns from Init/Reset
+5. Handle error returns from Init/Reset or omit check digit for auto-calculation
+

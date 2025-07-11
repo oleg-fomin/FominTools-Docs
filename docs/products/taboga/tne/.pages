@@ -2,8 +2,9 @@ title: "Taboga Native Excel"
 arrange:
   - index.md
   - installation.md
-  - workbook.md
-  - formatting.md
-  - templates.md
   - reference.md
+  - templates.md
+  - formatting.md
+  - workbook.md
   - troubleshooting.md
+  - tutorial.md
