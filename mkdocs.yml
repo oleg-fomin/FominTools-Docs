@@ -10,7 +10,7 @@ theme:
     - navigation.tracking
 #    - navigation.expand
     - navigation.top
-    - toc.integrate
+#    - toc.integrate
     - content.code.copy
   palette: 
     # Palette toggle for light mode

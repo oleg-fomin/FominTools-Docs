@@ -1,0 +1,9 @@
+title: Taboga Barcode Library
+arrange:
+  - index.md
+  - installation.md
+  - barcode-types.md
+  - handcode.md
+  - templates.md
+  - reference.md
+  - troubleshooting.md
