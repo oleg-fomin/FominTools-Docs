@@ -1,8 +1,9 @@
-site_name: FominTools Docs
+site_name: Fomin Tools
 theme:
   name: material
-  logo: images/logo_light.png  # Path relative to your docs directory
-  favicon: images/favicon2.png
+#  logo: images/logo_light.png  # Path relative to your docs directory
+  logo: images/logos/fomin-tools-logo.svg
+  favicon: images/logos/fomin-tools-logo.svg
   features:
     - navigation.tabs
 #    - navigation.tabs.sticky
