@@ -3,8 +3,8 @@ arrange:
   - index.md
   - features.md
   - installation.md
-  - usage.md
   - developer-guide.md
+  - usage.md
   - components.md
   - glossary.md
   - support.md

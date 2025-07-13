@@ -1,4 +1,4 @@
-# Using Fomin Report Builder
+# Building Reports
 
 With Fomin Report Builder (FRB), your users can create, customize, preview, and print reports—right from your application—without needing any development skills.
 

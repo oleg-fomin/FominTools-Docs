@@ -1,4 +1,5 @@
 site_name: Fomin Tools
+site_url: https://docs.fomintools.com
 theme:
   name: material
 #  logo: images/logo_light.png  # Path relative to your docs directory
@@ -11,24 +12,39 @@ theme:
     - navigation.tracking
 #    - navigation.expand
     - navigation.top
+    - navigation.footer
 #    - toc.integrate
     - content.code.copy
     - navigation.indexes  # This allows hiding navigation on index pages
-  palette: 
-    # Palette toggle for light mode
-    - scheme: default
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
         name: Switch to dark mode
+
     # Palette toggle for dark mode
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: Switch to system preference
 extra_css:
   - css/extra.css
 extra:
+  generator: false
   social:
+    - icon: fontawesome/solid/globe
+      link: https://fomintools.com
+    - icon: fontawesome/solid/envelope
+      link: mailto:<oleg@fomin.info>
     - icon: fontawesome/brands/github
       link: https://github.com/oleg-fomin
   favicon: images/favicon.png
@@ -51,3 +67,4 @@ markdown_extensions:
       permalink: 🔗
   - pymdownx.highlight
   - pymdownx.emoji
+copyright: Copyright &copy; 1998 - 2025 Oleg Fomin

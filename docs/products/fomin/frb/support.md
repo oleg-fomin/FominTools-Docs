@@ -35,28 +35,12 @@ Join the public FRB forum to:
 
 Technical support includes:
 
-- Author-supplied consulting via email
-- Free updates within the same product version
+- Product consulting via email
 - Help diagnosing integration or runtime issues
+- Free product updates within 12 months after initial product purchase
+- Paid subscription updates beyond this period 
 
-> 💬 Support is only guaranteed for **registered users**. If you obtained FRB through a distributor, be sure to register your copy.
-
----
-
-## 📝 Registration Info
-
-To register:
-
-1. Email [oleg@fomin.info](mailto:oleg@fomin.info)
-2. Include the following details:
-   - Serial number (from distributor, if purchased)
-   - First and last name
-   - Company name
-   - Phone number
-   - Postal address
-   - Email address
-
-Registered users will be added to the FRB mailing list for news and updates.
+> 💬 Technical support is guaranteed to **developers** with active subscription. Support for end users of your Clarion applications is not our responsibility.
 
 ---
 
@@ -71,18 +55,9 @@ Registered users will be added to the FRB mailing list for news and updates.
 
 ---
 
-## 🧪 Troubleshooting Tips
-
-- Use the preview mode to diagnose layout issues quickly
-- Use `.rpt` filenames that match report types to avoid misbinding
-- Double-check environment variable `CLACASE` if using non-English variables
-- Use embedded formula classes (`Before Print Detail`, etc.) for runtime logic
-
----
-
 ## 🧰 Need Developer Help?
 
-Check out:
+Check out first:
 
 - [Developer Guide](developer-guide.md)
 - [Components](components.md)

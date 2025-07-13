@@ -1,6 +1,6 @@
 ---
 hide:
-  - toc
+  - navigation
 ---
 # Products
 <div class="hero-section">
@@ -11,7 +11,7 @@ hide:
   </div>
 </div>
 
-<h2>Fomin Tools products</h2>
+## Fomin Tools products
 
 <div class="products-grid">
   
@@ -23,8 +23,12 @@ hide:
     </a>
   </div>
 
-<h2>Taboga Software products</h2>
+</div>
 
+## Taboga Software products
+
+<div class="products-grid">
+  
   <div class="product-card">
     <h3><a href="products/taboga/tbl/"><img src="images/logos/tbl-logo.svg" alt="TBL Logo" width="96" height="96"></a> <a href="products/taboga/tbl/">Taboga Barcode Library</a></h3>
     <p><em>Professional barcode generation component supporting Code 39, Code 128, UPC, EAN and more.</em></p>
@@ -61,7 +65,7 @@ hide:
 
 <hr>
 
-<h2>🏢 Company Heritage</h2>
+## 🏢 Company Heritage
 
 <div class="heritage-section">
   <img src="images/logos/fomin-tools-logo.svg" alt="Fomin Tools Logo" width="96" height="96" style="float: right; margin-left: 20px;">
@@ -77,7 +81,7 @@ hide:
   <p><strong>Taboga Software</strong>, founded by Edgard L. Riba, created innovative Clarion development tools that became industry standards. Fomin Tools proudly continues this tradition, maintaining and enhancing these essential libraries for the modern Clarion community.</p>
 </div>
 
-<h2>🎯 Why Choose Our Tools?</h2>
+## 🎯 Why Choose Our Tools?
 
 <div class="features-grid">
   <div>
@@ -113,7 +117,7 @@ hide:
 
 <hr>
 
-<h2>📞 Contact & Support</h2>
+## 📞 Contact & Support
 
 <div class="contact-section">
   <h3>🌐 Official Website</h3>
