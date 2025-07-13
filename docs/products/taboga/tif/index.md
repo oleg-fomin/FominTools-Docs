@@ -1,4 +1,4 @@
-# Overview
+# Taboga Interactive Filter
 
 **Taboga Interactive Filter** provides powerful, intuitive filtering capabilities for Clarion browse procedures. Originally created by Edgard L. Riba (Taboga Software) in 2008-2009 and enhanced by Fomin Tools, this library transforms standard browse windows into sophisticated data filtering interfaces.
 

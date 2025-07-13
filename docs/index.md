@@ -2,7 +2,7 @@
 hide:
   - toc
 ---
-
+# Products
 <div class="hero-section">
   <img src="images/logos/fomin-tools-logo.svg" alt="Fomin Tools Logo" width="96" height="96" style="float: left; margin-right: -20px;">
   <img src="images/logos/taboga-software-logo.svg" alt="Taboga Software Logo" width="96" height="96" style="float: left; margin-right: 20px;">
@@ -11,7 +11,7 @@ hide:
   </div>
 </div>
 
-<h2>🛠️ Fomin Tools products</h2>
+<h2>Fomin Tools products</h2>
 
 <div class="products-grid">
   
@@ -22,6 +22,8 @@ hide:
       <span>🛒 Buy Now</span>
     </a>
   </div>
+
+<h2>Taboga Software products</h2>
 
   <div class="product-card">
     <h3><a href="products/taboga/tbl/"><img src="images/logos/tbl-logo.svg" alt="TBL Logo" width="96" height="96"></a> <a href="products/taboga/tbl/">Taboga Barcode Library</a></h3>

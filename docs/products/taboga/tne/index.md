@@ -1,4 +1,4 @@
-# Overview
+# Taboga Native Excel
 
 **Taboga Native Excel** is a powerful component for working with Excel files in native format. It is a pure Clarion class library. All source code included.
 
