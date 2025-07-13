@@ -4,8 +4,11 @@ hide:
 ---
 
 <div class="hero-section">
-  <h2><img src="images/logos/fomin-tools-logo.svg" alt="Fomin Tools Logo" width="96" height="96" style="float: left; margin-right: 20px;"> Professional Development Tools for Clarion Applications<img src="images/logos/taboga-software-logo.svg" alt="Taboga Software Logo" width="96" height="96" style="float: right; margin-left: 20px;"></h2>
-  <p><strong>Fomin Tools</strong> brings you cutting-edge development libraries and utilities that enhance your Clarion applications with powerful features your users will love. From advanced reporting solutions to intuitive filtering systems, we provide the tools that transform ordinary applications into professional, user-friendly software.</p>
+  <img src="images/logos/fomin-tools-logo.svg" alt="Fomin Tools Logo" width="96" height="96" style="float: left; margin-right: -20px;">
+  <img src="images/logos/taboga-software-logo.svg" alt="Taboga Software Logo" width="96" height="96" style="float: left; margin-right: 20px;">
+  <h2> Professional Development Tools for <strong>Clarion</strong> Applications</h2>
+  <div><strong>Fomin Tools</strong> brings you cutting-edge development libraries and utilities that enhance your Clarion applications with powerful features your users will love. From advanced reporting solutions to intuitive filtering systems, we provide the tools that transform ordinary applications into professional, user-friendly software.
+  </div>
 </div>
 
 <h2>🛠️ Fomin Tools products</h2>
