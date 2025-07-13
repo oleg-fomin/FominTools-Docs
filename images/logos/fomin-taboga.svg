@@ -1,0 +1,71 @@
+<svg width="184" height="96" viewBox="0 0 184 96" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fominGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tabogaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fomin Tools Logo (left side, scaled up to 96x96) -->
+  <g transform="scale(1.5)">
+    <!-- Background circle -->
+    <circle cx="32" cy="32" r="30" fill="url(#fominGradient)" stroke="#fff" stroke-width="2"/>
+    
+    <!-- Letter "F" stylized -->
+    <path d="M20 16 L20 48 L24 48 L24 34 L36 34 L36 30 L24 30 L24 20 L40 20 L40 16 Z" fill="#fff"/>
+    
+    <!-- Tools elements -->
+    <!-- Gear/cog -->
+    <g transform="translate(38, 38)">
+      <circle cx="6" cy="6" r="8" fill="none" stroke="#fff" stroke-width="2"/>
+      <circle cx="6" cy="6" r="4" fill="#fff"/>
+      <rect x="5" y="-2" width="2" height="4" fill="#fff"/>
+      <rect x="5" y="14" width="2" height="4" fill="#fff"/>
+      <rect x="-2" y="5" width="4" height="2" fill="#fff"/>
+      <rect x="14" y="5" width="6" height="2" fill="#fff"/>
+    </g>
+    
+    <!-- Code brackets -->
+    <path d="M12 24 L8 28 L12 32" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M16 40 L20 44 L16 48" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Taboga Software Logo (positioned with proper overlap) -->
+  <g transform="translate(76, 0)">
+    <!-- Background circle -->
+    <circle cx="48" cy="48" r="44" fill="url(#tabogaGradient)" stroke="#fff" stroke-width="3"/>
+    
+    <!-- Letter "T" stylized -->
+    <path d="M30 24 L66 24 L66 30 L51 30 L51 72 L45 72 L45 30 L30 30 Z" fill="#fff"/>
+    
+    <!-- Software elements -->
+    <!-- Code brackets -->
+    <path d="M18 36 L12 42 L18 48" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M78 36 L84 42 L78 48" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Binary code dots -->
+    <circle cx="24" cy="56" r="2" fill="#fff" opacity="0.8"/>
+    <circle cx="32" cy="56" r="2" fill="#fff" opacity="0.8"/>
+    <circle cx="24" cy="64" r="2" fill="#fff" opacity="0.8"/>
+    <circle cx="32" cy="64" r="2" fill="#fff" opacity="0.8"/>
+    
+    <circle cx="64" cy="56" r="2" fill="#fff" opacity="0.8"/>
+    <circle cx="72" cy="56" r="2" fill="#fff" opacity="0.8"/>
+    <circle cx="64" cy="64" r="2" fill="#fff" opacity="0.8"/>
+    <circle cx="72" cy="64" r="2" fill="#fff" opacity="0.8"/>
+    
+    <!-- Legacy gear element -->
+    <g transform="translate(35, 70)">
+      <circle cx="13" cy="13" r="12" fill="none" stroke="#fff" stroke-width="2.5"/>
+      <circle cx="13" cy="13" r="6" fill="#fff"/>
+      <rect x="12" y="1" width="2" height="6" fill="#fff"/>
+      <rect x="12" y="19" width="2" height="6" fill="#fff"/>
+      <rect x="1" y="12" width="6" height="2" fill="#fff"/>
+      <rect x="19" y="12" width="6" height="2" fill="#fff"/>
+    </g>
+  </g>
+</svg>

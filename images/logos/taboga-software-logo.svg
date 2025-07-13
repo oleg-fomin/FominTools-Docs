@@ -9,8 +9,8 @@
   <!-- Background circle -->
   <circle cx="48" cy="48" r="44" fill="url(#tabogaGradient)" stroke="#fff" stroke-width="3"/>
   
-  <!-- Letter "T" stylized -->
-  <path d="M20 24 L76 24 L76 32 L56 32 L56 72 L40 72 L40 32 L20 32 Z" fill="#fff"/>
+  <!-- Letter "T" stylized - matching F's vertical stroke thickness -->
+  <path d="M30 24 L66 24 L66 30 L51 30 L51 72 L45 72 L45 30 L30 30 Z" fill="#fff"/>
   
   <!-- Software elements -->
   <!-- Code brackets -->
