@@ -1,8 +1,8 @@
-# Fomimn Report Builder
+# Fomin Report Builder
 
-_Flexible report building for Clarion applications—by developers, for users._
+_Flexible runtime report building for Clarion applications—either by developers and/or end users._
 
-**Fomin Report Builder** (FRB) is a powerful runtime reporting engine designed for Clarion for Windows. With deep integration into Clarion 2.0 through Clarion 5 (ABC and Legacy), and compatibility well into modern versions, FRB gives your applications a second wind—letting users create and customize their own reports _without touching source code_.
+**Fomin Report Builder** (FRB) is a powerful runtime reporting engine designed for Clarion for Windows. With deep integration into Clarion (ABC and Legacy) FRB gives your applications a second wind—letting users create and customize their own reports _without touching source code_.
 
 Whether you're an independent developer maintaining legacy systems or a corporate team extending Clarion-based solutions, FRB bridges the gap between developer efficiency and end-user autonomy.
 
