@@ -193,17 +193,7 @@
     }
     
     .hero-section {
-        padding: 1.5rem;
+        padding: 1rem;
     }
-}
-
-/* Ensure no margin/padding issues */
-.md-content {
-    margin-left: 0 !important;
-    padding-left: 0 !important;
-}
-
-.md-content__inner {
-    margin-left: 0 !important;
-    padding-left: 0 !important;
+    
 }
