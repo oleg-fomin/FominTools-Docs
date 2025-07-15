@@ -17,7 +17,15 @@
     padding: 2rem;
     border-radius: 8px;
     margin-bottom: 2rem;
+}
+
+.hero-section h2 {
     text-align: center;
+    margin-bottom: 1rem;
+}
+
+.hero-section p, .hero-section div {
+    text-align: justify;
 }
 
 .products-grid {
@@ -182,10 +190,26 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .products-grid h3 {
-        flex-direction: column;
-        text-align: center;
+    .product-card h3 {
+        flex-direction: row; /* Keep horizontal layout on mobile */
+        text-align: left; /* Left align instead of center */
         gap: 0.5rem;
+    }
+    
+    .product-card img {
+        width: 64px; /* Smaller logo on mobile */
+        height: 64px;
+    }
+    
+    .buy-now-link {
+        position: relative; /* Change from absolute to relative */
+        display: block;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    
+    .product-card p {
+        padding-right: 0; /* Remove right padding on mobile */
     }
     
     .features-grid {
@@ -193,17 +217,7 @@
     }
     
     .hero-section {
-        padding: 1.5rem;
+        padding: 1rem;
     }
-}
-
-/* Ensure no margin/padding issues */
-.md-content {
-    margin-left: 0 !important;
-    padding-left: 0 !important;
-}
-
-.md-content__inner {
-    margin-left: 0 !important;
-    padding-left: 0 !important;
+    
 }
